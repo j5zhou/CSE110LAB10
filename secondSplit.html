@@ -20,7 +20,7 @@
     <img src="./styles/settings.svg" alt="settings" width=40 height=40>
   </header>
 
-  <main class="double-column"></main>
+  <main></main>
 
   <entry-page></entry-page>
 
@@ -38,14 +38,14 @@
       var client = factory.client();
 
       client.on(client.Event.SDK_READY, function() {
-        var treatment = client.getTreatment('double_column_layout');
-        let main = document.querySelector("main");
+        var treatment = client.getTreatment('ModeSplit');
+        let body = document.querySelector("body");
         if (treatment === 'on') {
             // insert on code here
-            main.classList.add("double-column");
-        }  else   if (treatment === 'off') {
+            body.classList.add("settings");
+        } else   if (treatment === 'off') {
             // insert off code here
-            main.classList.remove("double-column");
+            body.classList.remove("dark");
         }
       });
   </script>

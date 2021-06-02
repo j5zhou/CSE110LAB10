@@ -84,10 +84,11 @@ body.settings entry-page {
 body.settings header {
   background-color: rgb(157, 157, 157);
 }
-
+/*
 body.settings main {
   display: none;
 }
+*/
 /* Setttings CSS End */
 
 /* Single Entry CSS Start */
